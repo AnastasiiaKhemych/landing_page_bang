@@ -5,8 +5,8 @@
   "description": "Landing page",
   "homepage": "https://AnastasiiaKhemych.github.io/landing_page_bang/",
   "scripts": {
-    "start": "parcel --open",
-    "build": "parcel build --public-url=/dist",
+    "start": "parcel serve src/index.html --open",
+    "build": "parcel build --dist-dir=dist --public-url=/landing_page_bang",
     "publish": "gh-pages -d dist"
   },
   "keywords": [
@@ -16,9 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
-    "parcel": "^2.9.3"
-  },
-  "dependencies": {
+    "parcel": "^2.9.3",
     "gh-pages": "^6.0.0"
   }
 }
